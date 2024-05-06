@@ -25,13 +25,12 @@ function Hero() {
           width: '100%',
           height: '100%',
           boxSizing: 'border-box',
-          position: 'absolute',
+          position: 'relative',
           top: 0,
           m: 0,
           p: 0
         }}>
           <Box sx={{
-            position: 'absolute',
             bottom: 0,
             width: '100%',
             alignItems: 'center',
@@ -43,38 +42,33 @@ function Hero() {
             gap: 2
           }}>
             <Box sx={{
-              // display: 'flex',
-              // alignItems: 'center',
-              // justifyContent: 'center',
-              // flexDirection: 'column',
-              // gap: 3
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-end',
+              flexDirection: 'column',
+              gap: 1
             }}>
-              <Typography
-                variant='h1'
-                sx={{
-                  display: 'none'
-                }}
-              >
-              K/DA
-              </Typography>
-              <Box
-                component='img'
-                src={LogoImg}
-                sx={{
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: 'cover',
-                  display: 'block',
-                  position: 'relative',
-                  top: 230,
-                  width: '73%',
-                  height: '73%',
-                  mx: 'auto'
-                }}>
+              <Box>
+                <Box
+                  component='img'
+                  src={LogoImg}
+                  sx={{
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    display: 'block',
+                    width: '73%',
+                    height: '73%',
+                    mx: 'auto',
+                    mt: {
+                      lg: '34.375rem',
+                      md: '24.375rem',
+                      xs: '14.375rem'
+                    }
+                  }}>
+                </Box>
               </Box>
             </Box>
             <Box sx={{
-              position: 'relative',
-              top: 140
             }}>
               <Box sx={{
                 mb: '25px'
@@ -107,7 +101,8 @@ function Hero() {
                 }}>
                 K/DA exploded into the music scene with their hit song “POP/STARS.” Fans of K/DA can’t get enough of their unconventional flair, from the trademark tails (which fans suspect are real) to otherworldly decor in their studio. “Our songs are for you to remember—-always be true to yourself,” says lead singer Ahri. K/DA hopes to take their music around the world in a global tour.
                 </Typography>
-              </Box></Box> 
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Box>

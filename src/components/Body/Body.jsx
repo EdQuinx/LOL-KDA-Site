@@ -1,8 +1,12 @@
+import FeatureVideo from './FeatureVideo/FeatureVideo'
 import Hero from './Hero/Hero'
 
 function Body() {
   return (
-    <Hero />
+    <>
+      <Hero />
+      <FeatureVideo />
+    </>
   )
 }
 

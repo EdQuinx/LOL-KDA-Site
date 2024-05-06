@@ -8,7 +8,8 @@ function Landing() {
       disableGutters
       maxWidth={false}
       sx={{
-        height: '100vh',
+        bgcolor: 'black',
+        height: '100%',
         m: 0,
         p: 0
       }}>
