@@ -43,7 +43,12 @@ function AppBar() {
         lineHeight: 'normal',
         textAlign: 'left',
         fontWeight: 'bold',
-        borderBottom: '2px solid rbga(51, 51, 51, 0.25)'
+        borderBottom: '2px solid rbga(51, 51, 51, 0.25)',
+        justifyContent: {
+          lg: 'flex-start',
+          md: 'space-between',
+          xs: 'space-between'
+        }
       }}>
         {/* Left */}
         <Box sx={{
@@ -90,15 +95,15 @@ function AppBar() {
         </Box>
         {/* Center */}
         <Box sx={{
-          display: 'flex',
+          display: {
+            lg: 'flex',
+            md: 'none',
+            xs: 'none'
+          },
           alignItems: 'center',
           justifyContent: 'flex-start',
           flex: 1,
-          opacity: {
-            lg: 1,
-            md: 0,
-            xs: 0
-          }
+          width: '100vh'
         }}>
           <Box
             sx={{
@@ -146,7 +151,7 @@ function AppBar() {
           </Link>
           <Box sx={{
             ml: '10px',
-            width: '100%',
+            width: '100vh',
             height: (theme) => theme.kda.appBarHeight
             // transition: 'opacity ease 0.3s'
           }}>
