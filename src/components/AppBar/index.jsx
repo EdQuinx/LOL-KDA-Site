@@ -26,7 +26,7 @@ function AppBar() {
   }
   return (
     <Box sx={{
-      position: 'fixed',
+      position: 'relative',
       top: 0,
       left: 0,
       right: 0,

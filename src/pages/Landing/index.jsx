@@ -1,5 +1,6 @@
 import Container from '@mui/material/Container'
 import AppBar from '~/components/AppBar'
+import Body from '~/components/Body/Body'
 
 function Landing() {
   return (
@@ -9,10 +10,10 @@ function Landing() {
       sx={{
         height: '100vh',
         m: 0,
-        p: 0,
-        position: 'static'
+        p: 0
       }}>
       <AppBar />
+      <Body />
     </Container>
   )
 }
