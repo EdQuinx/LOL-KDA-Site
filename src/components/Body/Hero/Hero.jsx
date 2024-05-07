@@ -25,7 +25,7 @@ function Hero() {
           width: '100%',
           height: '100%',
           boxSizing: 'border-box',
-          position: 'relative',
+          position: 'absolute',
           top: 0,
           m: 0,
           p: 0
