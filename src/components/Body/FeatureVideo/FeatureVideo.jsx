@@ -4,8 +4,8 @@ import Box from '@mui/material/Box'
 import SoundBarPng from '~/assets/soundbar.png'
 import ReactPlayer from 'react-player'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
-
-const imageUrl = 'https://images.contentstack.io/v3/assets/blt187521ff0727be24/blte904e27c82dab9c2/60ee0edc6d4b755f502983f0/kda-music-video-placeholder.jpg'
+import KDAThumbnailImg from '~/assets/kda-music-video-placeholder.jpg'
+//const imageUrl = 'https://images.contentstack.io/v3/assets/blt187521ff0727be24/blte904e27c82dab9c2/60ee0edc6d4b755f502983f0/kda-music-video-placeholder.jpg'
 
 function FeatureVideo() {
   return (
@@ -101,7 +101,7 @@ function FeatureVideo() {
                   <ReactPlayer
                     width='100%'
                     height='100%'
-                    light={imageUrl}
+                    light={KDAThumbnailImg}
                     controls={true}
                     playing={true}
                     playIcon={<PlayArrowIcon sx={{
