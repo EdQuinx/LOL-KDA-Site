@@ -5,6 +5,9 @@ const APP_BAR_HEIGHT = '80px'
 const BOARD_BAR_HEIGHT = '60px'
 const BOARD_CONTENT_HEIGHT = `calc(100vh - ${APP_BAR_HEIGHT} - ${BOARD_BAR_HEIGHT})`
 
+//Typography
+const TYPO_COLOR = '#fff'
+
 // Create a theme instance.
 const theme = extendTheme({
   kda: {
@@ -16,7 +19,7 @@ const theme = extendTheme({
     light: {
       palette: {
         primary: {
-          main: '#fff'
+          main: TYPO_COLOR
         },
         secondary: {
           main: '#e5b48f'
@@ -29,7 +32,7 @@ const theme = extendTheme({
       styleOverrides: {
         root: {
           fontFamily: 'Barlow Condensed, sans-serif',
-          color: (theme) => theme.palette.primary.main,
+          color: TYPO_COLOR,
           fontSize: '0.875rem'
         }
       }
