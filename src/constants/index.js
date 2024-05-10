@@ -93,3 +93,27 @@ When the music begins, a symphony of movement stirs in my being. It begins as a 
     ]
   }
 ]
+
+export const MOCK_ABOUT = [
+  {
+    category: 'Song Lyrics',
+    title: 'POP/STARS',
+    thumbnail: 'src/assets/modules/kda_bridge_2.jpg',
+    description: 'Learn the chorus and sing along to POP/STARS.',
+    label: 'View the lyrics'
+  },
+  {
+    category: 'Poprox Interview',
+    title: 'Inside K/DA',
+    thumbnail: 'src/assets/modules/kda-interview.jpg',
+    description: 'PopRox chats with K/DA members on their style, personal life, and success after POP/STARS.',
+    label: 'Get to know them'
+  },
+  {
+    category: 'Live Footage',
+    title: 'K/DA at Worlds',
+    thumbnail: 'src/assets/modules/kda-module-placeholder.jpg',
+    description: 'K/DA performs POP/STARS at the League of Legends World Championship.',
+    label: 'Watch the stars'
+  }
+]

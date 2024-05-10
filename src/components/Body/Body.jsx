@@ -1,6 +1,7 @@
 import FeatureVideo from './FeatureVideo/FeatureVideo'
 import Hero from './Hero/Hero'
 import Character from './Character/Character'
+import About from './About/About'
 
 function Body() {
   return (
@@ -8,6 +9,7 @@ function Body() {
       <Hero />
       <FeatureVideo />
       <Character />
+      <About />
     </>
   )
 }
