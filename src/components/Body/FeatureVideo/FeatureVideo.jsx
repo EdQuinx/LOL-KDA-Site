@@ -5,15 +5,24 @@ import SoundBarPng from '~/assets/soundbar.png'
 import ReactPlayer from 'react-player'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import KDAThumbnailImg from '~/assets/kda-music-video-placeholder.jpg'
-//const imageUrl = 'https://images.contentstack.io/v3/assets/blt187521ff0727be24/blte904e27c82dab9c2/60ee0edc6d4b755f502983f0/kda-music-video-placeholder.jpg'
+import { useTheme } from '@mui/material'
 
 function FeatureVideo() {
+  const { breakpoints } = useTheme()
+
   return (
     <Paper
       elevation={3}
       sx={{
         bgcolor: 'black',
-        p: '210px 0 150px'
+        [breakpoints.up(1680)]: {
+          p: '210px 0 150px'
+        },
+        p: {
+          lg: '450px 0 150px',
+          md: '350px 0 150px',
+          xs: '250px 0 150px'
+        }
       }}
     >
       <Box
@@ -24,9 +33,10 @@ function FeatureVideo() {
         }}>
         <Typography
           sx={{
-            color: '#e5b48f',
-            fontSize: '0.875rem',
+            color: (theme) => theme.palette.secondary.main,
             fontStyle: 'italic',
+            letterSpacing: '0.05em',
+            fontWeight: 700,
             lineHeight: '112%',
             mb: '13px',
             textTransform: 'uppercase'
@@ -37,12 +47,18 @@ function FeatureVideo() {
         <Typography
           variant='span'
           sx={{
-            fontSize: '2.1rem',
+            fontSize: {
+              lg: '2.5rem',
+              md: '2.7rem',
+              sm: '2rem',
+              xs: '2rem'
+            },
             fontWeight: 700,
             fontStyle: 'italic',
             lineHeight: '112%',
+            letterSpacing: '0.05em',
             textTransform: 'uppercase',
-            color: 'white',
+            color: (theme) => theme.palette.primary.main,
             maxWidth: '600px',
             mb: '67px'
           }}
@@ -106,12 +122,12 @@ function FeatureVideo() {
                     playing={true}
                     playIcon={<PlayArrowIcon sx={{
                       bgcolor: 'black',
-                      color: '#e5b48f',
+                      color: (theme) => theme.palette.secondary.main,
                       border: '2px solid #e5b48f',
                       fontSize: '2.6rem',
                       transition: 'background-color .3s, opacity .3s',
                       '&:hover': {
-                        bgcolor: '#e5b48f',
+                        bgcolor: (theme) => theme.palette.secondary.main,
                         color: 'black'
                       }
                     }}/>}

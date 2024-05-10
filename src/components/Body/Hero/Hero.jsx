@@ -12,7 +12,8 @@ function Hero() {
         backgroundImage: `url(${HeroImg})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundPosition: '50% 50%'
+        backgroundPosition: '50% 50%',
+        position: 'relative'
       }}>
       <Box sx={{
         boxSizing: 'border-box',
@@ -60,12 +61,12 @@ function Hero() {
                     height: '73%',
                     mx: 'auto',
                     mt: {
-                      lg: '34.375rem',
-                      md: '24.375rem',
-                      xs: '14.375rem'
+                      lg: '30.375rem',
+                      md: '20.375rem',
+                      xs: '10.375rem'
                     },
                     mb: {
-                      lg: '-3.75rem',
+                      lg: '-5.75rem',
                       md: '-2.75rem',
                       xs: '-1.75rem'
                     }
@@ -76,19 +77,22 @@ function Hero() {
             <Box sx={{
             }}>
               <Box sx={{
-                mb: '25px'
+                mb: '35px'
               }}>
                 <Typography
                   sx={{
                     fontSize: {
-                      lg: '2.1rem',
-                      md: '1.7rem'
+                      lg: '2.5rem',
+                      md: '2.7rem',
+                      sm: '2rem',
+                      xs: '2rem'
                     },
                     fontWeight: 700,
                     fontStyle: 'italic',
                     lineHeight: '112%',
+                    letterSpacing: '0.05em',
                     textTransform: 'uppercase',
-                    color: 'white',
+                    color: (theme) => theme.palette.primary.main,
                     maxWidth: '600px'
                   }}
                 >
@@ -96,22 +100,23 @@ function Hero() {
                 </Typography>
               </Box>
               <Box sx={{
-                color: 'white',
+                color: (theme) => theme.palette.primary.main,
+                fontFamily: '"Helvetica","Arial",sans-serif',
+                fontSize: {
+                  lg: '0.875rem',
+                  md: '0.82rem',
+                  xs: '0.75rem'
+                },
                 lineHeight: '1.42817',
                 fontStyle: 'italic',
-                fontWeight: 600,
-                maxWidth: '600px',
+                fontWeight: 500,
+                maxWidth: '610px',
+                letterSpacing: '0.368px',
                 textAlign: 'center'
               }}>
-                <Typography sx={{
-                  fontSize: {
-                    lg: '0.88rem',
-                    md: '0.82rem',
-                    xs: '0.75rem'
-                  }, lineHeight: 1.8
-                }}>
-                K/DA exploded into the music scene with their hit song “POP/STARS.” Fans of K/DA can’t get enough of their unconventional flair, from the trademark tails (which fans suspect are real) to otherworldly decor in their studio. “Our songs are for you to remember—-always be true to yourself,” says lead singer Ahri. K/DA hopes to take their music around the world in a global tour.
-                </Typography>
+                <p style={{ lineHeight: 1.8 }}>
+                  K/DA exploded into the music scene with their hit song “POP/STARS.” Fans of K/DA can’t get enough of their unconventional flair, from the trademark tails (which fans suspect are real) to otherworldly decor in their studio. “Our songs are for you to remember—-always be true to yourself,” says lead singer Ahri. K/DA hopes to take their music around the world in a global tour.
+                </p>
               </Box>
             </Box>
           </Box>

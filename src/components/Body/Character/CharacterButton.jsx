@@ -73,21 +73,21 @@ function CharacterButton( props ) {
                     transition: 'border-color 0.2s',
                     transformOrigin: '0 100%',
                     '&.avatar-active': {
-                      borderColor: '#e5b48f'
+                      borderColor: (theme) => theme.palette.secondary.main
                     }
                   }}>
                   <Box
                     className={characterIndex == index ? 'avatar-active' : ''}
                     sx={{
-                      borderColor: '#e5b48f',
+                      borderColor: (theme) => theme.palette.secondary.main,
                       border: '2px solid #000',
                       overflow: 'hidden',
                       height: '100%',
                       '&:hover': {
-                        borderColor: 'white'
+                        borderColor: (theme) => theme.palette.primary.main
                       },
                       '&.avatar-active': {
-                        borderColor: '#e5b48f'
+                        borderColor: (theme) => theme.palette.secondary.main
                       }
 
                     }}>
@@ -114,7 +114,7 @@ function CharacterButton( props ) {
                     lineHeight: '112%',
                     textTransform: 'uppercase',
                     transform: 'skewX(20deg)',
-                    color: 'white',
+                    color: (theme) => theme.palette.primary.main,
                     mt: '20px',
                     ml: '20px'
                   }}

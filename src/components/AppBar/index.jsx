@@ -81,7 +81,7 @@ function AppBar() {
                 component={RiotLogoSvg}
                 inheritViewBox
                 sx={{
-                  color: 'white',
+                  color: (theme) => theme.palette.primary.main,
                   fontSize: '5.2rem'
                 }} />
               <SvgIcon
@@ -135,6 +135,7 @@ function AppBar() {
           >
             <Typography
               sx={{
+                fontFamily: '"Roboto","Helvetica","Arial",sans-serif',
                 display: 'block',
                 color: '#f9f9f9',
                 fontSize: '1.125rem',
@@ -238,7 +239,7 @@ function AppBar() {
                     left: '8px',
                     width: '16px',
                     height: '16px',
-                    color: 'white'
+                    color: (theme) => theme.palette.primary.main
                   }}
                   fontSize='1rem'
                   id="menu-language"

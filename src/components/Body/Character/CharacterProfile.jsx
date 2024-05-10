@@ -22,7 +22,7 @@ function CharacterProfile( props ) {
           letterSpacing: '0.05em',
           lineHeight: '112%',
           textTransform: 'uppercase',
-          color: '#e5b48f',
+          color: (theme) => theme.palette.secondary.main,
           mb: '-8px'
         }}
         >
@@ -36,7 +36,7 @@ function CharacterProfile( props ) {
           letterSpacing: '0.05em',
           lineHeight: '112%',
           textTransform: 'uppercase',
-          color: 'white',
+          color: (theme) => theme.palette.primary.main,
           mb: '36px'
         }}
         >
@@ -63,7 +63,7 @@ function CharacterProfile( props ) {
             letterSpacing: '0.05em',
             lineHeight: '112%',
             textTransform: 'uppercase',
-            color: '#e5b48f',
+            color: (theme) => theme.palette.secondary.main,
             mb: '14px',
             width: 'calc(50% - 5px)',
             flexGrow: 0,
@@ -83,7 +83,7 @@ function CharacterProfile( props ) {
             letterSpacing: '0.05em',
             lineHeight: '112%',
             textTransform: 'uppercase',
-            color: 'white',
+            color: (theme) => theme.palette.primary.main,
             ml: '0px',
             mb: '34px',
             width: 'calc(50% - 5px)',
@@ -104,7 +104,7 @@ function CharacterProfile( props ) {
             letterSpacing: '0.05em',
             lineHeight: '112%',
             textTransform: 'uppercase',
-            color: '#e5b48f',
+            color: (theme) => theme.palette.secondary.main,
             ml: '0px',
             mb: '14px',
             width: 'calc(50% - 5px)',
@@ -125,7 +125,7 @@ function CharacterProfile( props ) {
             letterSpacing: '0.05em',
             lineHeight: '112%',
             textTransform: 'uppercase',
-            color: 'white',
+            color: (theme) => theme.palette.primary.main,
             ml: '0px',
             mb: '34px',
             width: 'calc(50% - 5px)',
@@ -146,7 +146,7 @@ function CharacterProfile( props ) {
             letterSpacing: '0.05em',
             lineHeight: '112%',
             textTransform: 'uppercase',
-            color: '#e5b48f',
+            color: (theme) => theme.palette.secondary.main,
             ml: '0px',
             mb: '14px',
             width: 'calc(50% - 5px)',
@@ -167,7 +167,7 @@ function CharacterProfile( props ) {
             letterSpacing: '0.05em',
             lineHeight: '112%',
             textTransform: 'uppercase',
-            color: 'white',
+            color: (theme) => theme.palette.primary.main,
             ml: '0px',
             mb: '34px',
             width: 'calc(50% - 5px)',
@@ -188,7 +188,7 @@ function CharacterProfile( props ) {
             letterSpacing: '0.05em',
             lineHeight: '112%',
             textTransform: 'uppercase',
-            color: '#e5b48f',
+            color: (theme) => theme.palette.secondary.main,
             ml: '0px',
             mb: '14px',
             width: 'calc(50% - 5px)',
@@ -209,7 +209,7 @@ function CharacterProfile( props ) {
             letterSpacing: '0.05em',
             lineHeight: '112%',
             textTransform: 'uppercase',
-            color: 'white',
+            color: (theme) => theme.palette.primary.main,
             ml: '0px',
             mb: '34px',
             width: 'calc(50% - 5px)',
@@ -258,12 +258,12 @@ function CharacterProfile( props ) {
                 transition: 'background-color 0.2s',
                 bgcolor: 'transparent',
                 border: '2px solid #e5b48f',
-                color: 'white',
+                color: (theme) => theme.palette.primary.main,
                 ml: '0px',
                 p: '11px 20px',
                 borderRadius: '0px',
                 '&.active': {
-                  bgcolor: '#e5b48f',
+                  bgcolor: (theme) => theme.palette.secondary.main,
                   color: 'black'
                 }
               }}
@@ -296,12 +296,12 @@ function CharacterProfile( props ) {
                 transition: 'background-color 0.2s',
                 bgcolor: 'transparent',
                 border: '2px solid #e5b48f',
-                color: 'white',
+                color: (theme) => theme.palette.primary.main,
                 ml: '0px',
                 p: '11px 20px',
                 borderRadius: '0px',
                 '&.active': {
-                  bgcolor: '#e5b48f',
+                  bgcolor: (theme) => theme.palette.secondary.main,
                   color: 'black'
                 }
               }}
@@ -321,7 +321,7 @@ function CharacterProfile( props ) {
             fontWeight: 600,
             letterSpacing: '0.5px',
             lineHeight: '1.42017',
-            color: 'white',
+            color: (theme) => theme.palette.primary.main,
             width: '100%',
             flexShrink: 0,
             p: '58px 0 40px',
@@ -329,12 +329,13 @@ function CharacterProfile( props ) {
           }}
           >
             <Typography component='div' dangerouslySetInnerHTML={{ __html: characterData.description }} sx={{
+              fontFamily: '"Roboto","Helvetica","Arial",sans-serif',
               fontSize: '0.85rem',
               fontStyle: 'italic',
               fontWeight: 400,
               letterSpacing: '0.5px',
               lineHeight: '1.8',
-              color: 'white',
+              color: (theme) => theme.palette.primary.main,
               whiteSpace: 'pre-wrap'
             }}/>
           </Box>
@@ -346,7 +347,7 @@ function CharacterProfile( props ) {
             fontWeight: 600,
             letterSpacing: '0.5px',
             lineHeight: '1.42017',
-            color: 'white',
+            color: (theme) => theme.palette.primary.main,
             width: '100%',
             flexShrink: 0,
             p: '58px 0 40px',
@@ -355,12 +356,13 @@ function CharacterProfile( props ) {
           }}
           >
             <Typography component='div' dangerouslySetInnerHTML={{ __html: characterData.facts.join('<br/>') }} sx={{
+              fontFamily: '"Roboto","Helvetica","Arial",sans-serif',
               fontSize: '0.85rem',
               fontStyle: 'italic',
               fontWeight: 400,
               letterSpacing: '0.5px',
               lineHeight: '1.8',
-              color: 'white',
+              color: (theme) => theme.palette.primary.main,
               whiteSpace: 'pre-wrap'
             }}/>
           </Box>

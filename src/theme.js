@@ -15,14 +15,26 @@ const theme = extendTheme({
   colorSchemes: {
     light: {
       palette: {
-        primary: grey,
-        secondary: blue
+        primary: {
+          main: '#fff'
+        },
+        secondary: {
+          main: '#e5b48f'
+        }
       }
     }
   },
   components: {
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          fontFamily: 'Barlow Condensed, sans-serif',
+          color: (theme) => theme.palette.primary.main,
+          fontSize: '0.875rem'
+        }
+      }
+    }
   }
-  // ...other properties
 })
 
 
