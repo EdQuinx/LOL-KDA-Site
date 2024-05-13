@@ -3,6 +3,7 @@ import Hero from './Hero/Hero'
 import Character from './Character/Character'
 import About from './About/About'
 import NewHit from './NewHit/NewHit'
+import Wallpaper from './Wallpaper/Wallpaper'
 
 function Body() {
   return (
@@ -12,6 +13,7 @@ function Body() {
       <Character />
       <About />
       <NewHit />
+      <Wallpaper />
     </>
   )
 }

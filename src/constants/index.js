@@ -117,3 +117,42 @@ export const MOCK_ABOUT = [
     label: 'Watch the stars'
   }
 ]
+
+export const MOCK_FANART = [
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-1.jpg'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-2.jpg'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-3.jpg'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-4.jpg'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-5.jpg'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-6.jpg'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-7.png'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-8.png'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-9.jpg'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-10.jpg'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-11.jpg'
+  },
+  {
+    imgUrl: 'src/assets/wallpapers/kda-fan-art-12.jpeg'
+  }
+]
