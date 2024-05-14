@@ -4,6 +4,7 @@ import Character from './Character/Character'
 import About from './About/About'
 import NewHit from './NewHit/NewHit'
 import Wallpaper from './Wallpaper/Wallpaper'
+import Merchandise from './Merchandise/Merchandise'
 
 function Body() {
   return (
@@ -14,6 +15,7 @@ function Body() {
       <About />
       <NewHit />
       <Wallpaper />
+      <Merchandise />
     </>
   )
 }
