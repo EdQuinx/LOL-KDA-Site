@@ -1,7 +1,7 @@
 export const MOCK_CHARACTERS = [
   {
-    croppedSplash: 'src/assets/characters/kda-splash-cropped-ahri.png',
-    avatar: 'src/assets/characters/kda-avatar-ahri.jpg',
+    croppedSplash: './assets/characters/kda-splash-cropped-ahri.png',
+    avatar: './assets/characters/kda-avatar-ahri.jpg',
     name: 'Ahri',
     role: 'Lead Vocalist',
     zodiacSign: 'Sagittarius',
@@ -21,8 +21,8 @@ export const MOCK_CHARACTERS = [
     ]
   },
   {
-    croppedSplash: 'src/assets/characters/kda-splash-cropped-evelynn.png',
-    avatar: 'src/assets/characters/kda-avatar-evelynn.jpg',
+    croppedSplash: './assets/characters/kda-splash-cropped-evelynn.png',
+    avatar: './assets/characters/kda-avatar-evelynn.jpg',
     name: 'Evelynn',
     role: 'Lead Vocalist',
     zodiacSign: 'Taurus',
@@ -42,8 +42,8 @@ export const MOCK_CHARACTERS = [
     ]
   },
   {
-    croppedSplash: 'src/assets/characters/kda-splash-cropped-kaisa.png',
-    avatar: 'src/assets/characters/kda-avatar-kaisa.jpg',
+    croppedSplash: './assets/characters/kda-splash-cropped-kaisa.png',
+    avatar: './assets/characters/kda-avatar-kaisa.jpg',
     name: 'Kai\'Sa',
     role: 'Lead Dancer',
     zodiacSign: 'Pisces',
@@ -72,8 +72,8 @@ When the music begins, a symphony of movement stirs in my being. It begins as a 
     ]
   },
   {
-    croppedSplash: 'src/assets/characters/kda-splash-cropped-akali.png',
-    avatar: 'src/assets/characters/kda-avatar-akali.jpg',
+    croppedSplash: './assets/characters/kda-splash-cropped-akali.png',
+    avatar: './assets/characters/kda-avatar-akali.jpg',
     name: 'Akali',
     role: 'Rapper',
     zodiacSign: 'Taurus',
@@ -98,21 +98,21 @@ export const MOCK_ABOUT = [
   {
     category: 'Song Lyrics',
     title: 'POP/STARS',
-    thumbnail: 'src/assets/modules/kda_bridge_2.jpg',
+    thumbnail: './assets/modules/kda_bridge_2.jpg',
     description: 'Learn the chorus and sing along to POP/STARS.',
     label: 'View the lyrics'
   },
   {
     category: 'Poprox Interview',
     title: 'Inside K/DA',
-    thumbnail: 'src/assets/modules/kda-interview.jpg',
+    thumbnail: './assets/modules/kda-interview.jpg',
     description: 'PopRox chats with K/DA members on their style, personal life, and success after POP/STARS.',
     label: 'Get to know them'
   },
   {
     category: 'Live Footage',
     title: 'K/DA at Worlds',
-    thumbnail: 'src/assets/modules/kda-module-placeholder.jpg',
+    thumbnail: './assets/modules/kda-module-placeholder.jpg',
     description: 'K/DA performs POP/STARS at the League of Legends World Championship.',
     label: 'Watch the stars'
   }
@@ -120,39 +120,39 @@ export const MOCK_ABOUT = [
 
 export const MOCK_FANART = [
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-1.jpg'
+    imgUrl: './assets/wallpapers/kda-fan-art-1.jpg'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-2.jpg'
+    imgUrl: './assets/wallpapers/kda-fan-art-2.jpg'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-3.jpg'
+    imgUrl: './assets/wallpapers/kda-fan-art-3.jpg'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-4.jpg'
+    imgUrl: './assets/wallpapers/kda-fan-art-4.jpg'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-5.jpg'
+    imgUrl: './assets/wallpapers/kda-fan-art-5.jpg'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-6.jpg'
+    imgUrl: './assets/wallpapers/kda-fan-art-6.jpg'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-7.png'
+    imgUrl: './assets/wallpapers/kda-fan-art-7.png'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-8.png'
+    imgUrl: './assets/wallpapers/kda-fan-art-8.png'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-9.jpg'
+    imgUrl: './assets/wallpapers/kda-fan-art-9.jpg'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-10.jpg'
+    imgUrl: './assets/wallpapers/kda-fan-art-10.jpg'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-11.jpg'
+    imgUrl: './assets/wallpapers/kda-fan-art-11.jpg'
   },
   {
-    imgUrl: 'src/assets/wallpapers/kda-fan-art-12.jpeg'
+    imgUrl: './assets/wallpapers/kda-fan-art-12.jpeg'
   }
 ]
